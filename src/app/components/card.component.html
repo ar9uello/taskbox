@@ -1,0 +1,14 @@
+<div class="main" (mouseleave)="collapse()" >
+    <div class="section" (mouseenter)="expand()">
+        <div class="card-line-1">{{card.line1}}</div>
+        <div class="card-line-2">{{card.line2}}</div>
+        <div class="card-line-3">{{card.line3}}</div>
+    </div>
+    <div class="section panelSize" [@panelSize]="status">
+        <div class="panelVisible" [@panelVisible]="status">
+            <button>{{card.button}}</button>
+        </div>
+    </div>
+</div>
+  
+  
